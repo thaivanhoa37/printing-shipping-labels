@@ -61,6 +61,14 @@
                 </svg>
                 <span>Cài đặt</span>
             </button>
+            <button class="nav-btn" data-tab="guide" onclick="switchTab('guide')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                <span>Hướng dẫn</span>
+            </button>
         </nav>
         <div class="sidebar-footer">
             <button class="nav-btn" onclick="showSavedInvoices()">
@@ -659,6 +667,34 @@
                                 <input type="text" id="qrText" placeholder="URL hoặc text..." oninput="updatePreview()"
                                     value="https://example.com">
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Guide -->
+                <div class="tab-content" id="tab-guide">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Hướng dẫn sử dụng</h2>
+                        </div>
+                        <div class="card-body">
+                            <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 1.1rem;">1. Giới thiệu chung</h3>
+                            <p style="margin-bottom: 20px; line-height: 1.6; color: var(--text-secondary);">Phần mềm giúp bạn tạo và in ấn hóa đơn, tem nhãn dễ dàng mà không cần kết nối mạng. Mọi dữ liệu đều được lưu trực tiếp trên trình duyệt của bạn.</p>
+                            
+                            <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 1.1rem;">2. Các bước cơ bản để in hóa đơn/tem</h3>
+                            <ul style="padding-left: 20px; line-height: 1.6; margin-bottom: 20px; color: var(--text-secondary);">
+                                <li style="margin-bottom: 10px;"><strong>Bước 1: Cài đặt thông tin (Chỉ cần làm 1 lần)</strong><br>Vào mục <em>"Cài đặt"</em> để thiết lập Tên công ty, Logo, Địa chỉ, SĐT và chọn màu sắc chủ đạo.</li>
+                                <li style="margin-bottom: 10px;"><strong>Bước 2: Chọn mẫu in & khổ giấy</strong><br>Vào mục <em>"Mẫu in"</em>. Chọn loại là "In Tem" (vừa khít 1 tờ, phù hợp làm tem vận đơn) hoặc "In Bill" (hóa đơn bán hàng kéo dài tự do). Chọn kích thước giấy bạn đang sử dụng (A4, A5, K80, 100x150...).</li>
+                                <li style="margin-bottom: 10px;"><strong>Bước 3: Nhập thông tin & Sản phẩm</strong><br>Vào mục <em>"Hóa đơn"</em>. Điền thông tin khách hàng và bấm "Thêm" ở danh sách sản phẩm để nhập các mặt hàng.</li>
+                                <li style="margin-bottom: 10px;"><strong>Bước 4: In hoặc xuất file</strong><br>Kiểm tra bản xem trước ở khung bên phải. Nếu ưng ý, bấm nút <strong>"In hóa đơn"</strong> ở góc trên cùng. Bạn cũng có thể bấm "Xuất PDF" để lưu file hoặc "Lưu" để lưu lại thông tin hóa đơn này trên máy.</li>
+                            </ul>
+
+                            <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 1.1rem;">3. Một số tính năng nâng cao</h3>
+                            <ul style="padding-left: 20px; line-height: 1.6; color: var(--text-secondary);">
+                                <li style="margin-bottom: 10px;"><strong>Tự thiết kế:</strong> Trong mục "Hóa đơn", bạn có thể chuyển từ "Hóa đơn chuẩn" sang "Tự thiết kế" để soạn thảo văn bản hóa đơn tự do như dùng Word.</li>
+                                <li style="margin-bottom: 10px;"><strong>Khối văn bản tự do:</strong> Vào mục "Văn bản" để thêm các đoạn ghi chú nhỏ, lời chúc... tự do lên hóa đơn.</li>
+                                <li style="margin-bottom: 10px;"><strong>Hóa đơn đã lưu:</strong> Bấm vào "Đã lưu" ở góc dưới bên trái để xem và in lại các hóa đơn trước đó.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
